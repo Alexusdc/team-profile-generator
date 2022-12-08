@@ -30,17 +30,17 @@ function buildTeam(){
     <title>My Team</title>
 </head>
 <body>
-    <div class="">
+    <div class="box">
         <div class="">
             <div class="">
     `);
     for (let i = 0; i < teamMembers.length; i++) {
         console.log(teamMembers[i])
         
-        fs.appendFileSync('./dist/team.html', `
+        fs.appendFileSync('./dist/team-page.html', `
         <div>
-        <div>
-                <h2> ${teamMembers[i].getName()} </h2>
+        <div class="name-box">
+                <h2 class="name"> ${teamMembers[i].getName()} </h2>
              </div>
              <div>
                 <ul class="list-group">
