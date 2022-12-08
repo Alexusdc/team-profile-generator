@@ -1,5 +1,5 @@
 const inquirer = require('inquirer');
-const Employee = require('./lib/employee');
+
 const Engineer = require('./lib/engineer');
 const Intern = require('./lib/intern');
 const Manager = require('./lib/manager');
@@ -30,10 +30,16 @@ function Team() {
             name: 'officeNumber',
             message: 'Please enter office number',
         })
-        .then(({ name }) => {
-            this.manager = new Manager(name);
-        })
+        .then(answers => {
+            const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerOfficeNumber);
+            manager.special = answers.managerOfficeNumber
+            teamMembers.push(manager);
+            // idArray.push(answers.managerId);
+           return createTeam();
+        });
     }
+
+
 }
 
 module.exports = Team; 
