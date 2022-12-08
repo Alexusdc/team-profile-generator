@@ -29,23 +29,23 @@ function buildTeam(){
     <title>My Team</title>
 </head>
 <body>
-    <div class="container-fluid">
-        <dive class="row">
-            <div class="team-area col-12 d-flex justify-content-center">
+    <di>
+        <div>
+            <di>
     `);
     for (let i = 0; i < teamMembers.length; i++) {
         console.log(teamMembers[i])
         
         fs.appendFileSync('./dist/team.html', `
-        <div class="card employee-card">
-        <div class="card-header">
-                <h2 class="card-title"> ${teamMembers[i].getName()} </h2>
+        <div>
+        <div>
+                <h2> ${teamMembers[i].getName()} </h2>
              </div>
-             <div class="card-body">
+             <div>
                 <ul class="list-group">
-                    <li class="list-group-item"> ID: ${teamMembers[i].id}</li>
-                    <li class="list-group-item"?> Email: <a href="mailto: ${teamMembers[i].email}">${teamMembers[i].email}</a></li>
-                    <li class="list-group-item">  ${teamMembers[i].special}</li>
+                    <li> ID: ${teamMembers[i].id}</li>
+                    <li?> Email: <a href="mailto: ${teamMembers[i].email}">${teamMembers[i].email}</a></li>
+                    <li>  ${teamMembers[i].special}</li>
                 </ul>
             <div>
         <div> 
