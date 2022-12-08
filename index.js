@@ -9,7 +9,7 @@ const Engineer = require("./lib/engineer")
 const Intern = require("./lib/intern")
 const render = require("./src/pageTemplate")
 const OUTPUT_DIR = path.resolve(__dirname, "output")
-const outputPath = path.join(OUTPUT_DIR, "team.html");
+const outputPath = path.join(OUTPUT_DIR, "team-page.html");
 
 const teamMembers = [];
 
@@ -20,7 +20,7 @@ function buildTeam(){
     // }
     console.log(teamMembers)
     // fs.writeFileSync('./dist/team.html', render(teamMembers), "utf-8");
-    fs.writeFileSync('./dist/team.html', `
+    fs.writeFileSync('./dist/team-page.html', `
     <!DOCTYPE html>
 <html lang="en">
 <head> <meta charset="UTF-8" />
@@ -31,8 +31,8 @@ function buildTeam(){
 </head>
 <body>
     <div class="box">
-        <div class="">
-            <div class="">
+        <div>
+            <div class="employee-card">
     `);
     for (let i = 0; i < teamMembers.length; i++) {
         console.log(teamMembers[i])
@@ -44,9 +44,9 @@ function buildTeam(){
              </div>
              <div>
                 <ul class="list-group">
-                    <li> ID: ${teamMembers[i].id}</li>
-                    <li> Email: <a href="mailto: ${teamMembers[i].email}">${teamMembers[i].email}</a></li>
-                    <li>  ${teamMembers[i].special}</li>
+                    <li class="id"> ID: ${teamMembers[i].id}</li>
+                    <li class="email"> Email: <a href="mailto: ${teamMembers[i].email}">${teamMembers[i].email}</a></li>
+                    <li class="special">  ${teamMembers[i].special}</li>
                 </ul>
             </div>
         </div> 
@@ -54,7 +54,7 @@ function buildTeam(){
         
         )
     }
-    fs.appendFileSync('./dist/team.html', `
+    fs.appendFileSync('./dist/team-page.html', `
     </div>
     </div>
 </div>

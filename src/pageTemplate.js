@@ -5,14 +5,14 @@ const generateTeam = team => {
         return `
             <div>
             <div>
-                    <h2> ${manager.getName()} </h2>
-                    <h3> <i> </i> ${manager.getRole()}</h3>
+                    <h2 class="name"> ${manager.getName()} </h2>
+                    <h3 class="role"> <i> </i> ${manager.getRole()}</h3>
                 </div>
                 <div>
                     <ul>
-                        <li> ID: ${manager.getId()}</li>
-                        <li Email: <a href="mailto: ${manager.getEmail()}></a>></li>
-                        <li> Office number: ${manager.getOfficeNumber()}</li>
+                        <li class="id"> ID: ${manager.getId()}</li>
+                        <li class="email" Email: <a href="mailto: ${manager.getEmail()}></a>></li>
+                        <li class="office_n> Office number: ${manager.getOfficeNumber()}</li>
                     </ul>
                 </div>
             </div>    
@@ -23,13 +23,13 @@ const generateEmployee = employee => {
     return `
     <div>
     <div>
-            <h2> ${employee.getName()} </h2>
-            <h3> <i> </i> ${employee.getRole()}</h3>
+            <h2 class="name"> ${employee.getName()} </h2>
+            <h3 class="role"> <i> </i> ${employee.getRole()}</h3>
          </div>
          <div>
             <ul>
-                <li> ID: ${employee.getId()}</li>
-                <li? Email: <a href="mailto: ${employee.getEmail()}></a>></li>
+                <li class="id"> ID: ${employee.getId()}</li>
+                <li class="email" Email: <a href="mailto: ${employee.getEmail()}></a>></li>
             </ul>
         </div>
     </div>  
@@ -40,13 +40,13 @@ const generateEngineer = engineer => {
     return `
     <div>
     <div>
-            <h2> ${engineer.getName()} </h2>
+            <h2 class="name"> ${engineer.getName()} </h2>
          </div>
          <div>
             <ul>
-                <li> ID: ${engineer.getId()}</li>
-                <li Email: <a href="mailto: ${engineer.getEmail()}></a>></li>
-                <li> Office number: ${engineer.getGithub()}</li>
+                <li class="id"> ID: ${engineer.getId()}</li>
+                <li class="email" Email: <a href="mailto: ${engineer.getEmail()}></a>></li>
+                <li class="office_n"> Office number: ${engineer.getGithub()}</li>
             </ul>
         </div>
     </div> 
@@ -57,13 +57,13 @@ const generateIntern = intern => {
     return `
     <div>
     <div>
-            <h2> ${intern.getName()} </h2>
+            <h2 class="name"> ${intern.getName()} </h2>
          </div>
          <div>
             <ul>
-                <li> ID: ${intern.getId()}</li>
-                <li? Email: <a href="mailto: ${intern.getEmail()}</a></li>
-                <li> Office number: ${intern.getSchool()}</li>
+                <li class="id"> ID: ${intern.getId()}</li>
+                <li class="email" Email: <a href="mailto: ${intern.getEmail()}</a></li>
+                <li class="office_n"> Office number: ${intern.getSchool()}</li>
             </ul>
         <div>
     <div>
