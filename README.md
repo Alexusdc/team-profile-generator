@@ -16,7 +16,7 @@
   ## Usage 
 In order to use Team Profile Generator, please refer to the video below as well as follow the steps 
 
- https://drive.google.com/file/d/1sHfHxzGQhpqu93OzDPAlqTP_jVCp_BEE/view
+https://drive.google.com/file/d/12efDn0TnAC5UKrnDJa7BsWBa48lTIsGB/view
  
 Step 1: Fork the following repository 
 Step 2: Open Visual Code, and open the file for Team Profile Generator  
