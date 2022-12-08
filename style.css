@@ -1,0 +1,30 @@
+#box {
+    background-color: red;
+};
+
+.employee-card {
+    border: solid gray;
+    padding: 25px;
+    margin: 100px;
+}
+
+.name {
+    color: aqua;
+    text-decoration-color: antiquewhite;
+    padding: 10px;
+}
+
+.email {
+    border: gray;
+    padding: 0 25 0 25;
+}
+
+.id {
+    border: gray;
+    padding: 50 25 0 25;
+}
+
+.special {
+    border: gray;
+    padding: 0 25 50 25;
+}
