@@ -65,6 +65,38 @@ function createTeam() {
     });
 };
 
+function addEngineer(){
+    inquirer.prompt([ {
+        type: "input",
+        name: "engineerName",
+        message: "What is the engineer's name?",
+    },
+
+    {
+        type: "input",
+        name: "engineerId",
+        message: "What is the engineer's ID?",
+    },
+
+    {
+        type: "input",
+        name: "engineerEmail",
+        message: "What is the engineer's email?",
+    },
+
+    {
+        type: "input",
+        name: "engineerGithub",
+        message: "What is the engineer's github?",
+    }
+
+]).then(answers => {
+        const engineer = new Engineer(answers.engineerName, answers.engineerId, answers.engineerEmail, answers.engineerGithub);
+        engineer.special = answers.engineerGithub
+        teamMembers.push(engineer);
+       return createTeam();
+    });
+}
 
 
 module.exports = initializeTeam; 
