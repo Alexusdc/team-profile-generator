@@ -6,16 +6,16 @@ const generateTeam = team => {
             <div>
             <div>
                     <h2> ${manager.getName()} </h2>
-                    <h3> <i> <//i> ${manager.getRole()}</h3>
+                    <h3> <i> </i> ${manager.getRole()}</h3>
                 </div>
                 <div>
                     <ul>
                         <li> ID: ${manager.getId()}</li>
-                        <li? Email: <a href="mailto: ${manager.getEmail()}</a></li>
+                        <li Email: <a href="mailto: ${manager.getEmail()}></a>></li>
                         <li> Office number: ${manager.getOfficeNumber()}</li>
                     </ul>
-                <div>
-            <div>    
+                </div>
+            </div>    
     `;
     }
 
@@ -24,15 +24,15 @@ const generateEmployee = employee => {
     <div>
     <div>
             <h2> ${employee.getName()} </h2>
-            <h3> <i> <//i> ${employee.getRole()}</h3>
+            <h3> <i> </i> ${employee.getRole()}</h3>
          </div>
          <div>
             <ul>
                 <li> ID: ${employee.getId()}</li>
-                <li? Email: <a href="mailto: ${employee.getEmail()}</a></li>
+                <li? Email: <a href="mailto: ${employee.getEmail()}></a>></li>
             </ul>
-        <div>
-    <div>  
+        </div>
+    </div>  
     `;
 }
 
@@ -45,11 +45,11 @@ const generateEngineer = engineer => {
          <div>
             <ul>
                 <li> ID: ${engineer.getId()}</li>
-                <li? Email: <a href="mailto: ${engineer.getEmail()}</a></li>
+                <li Email: <a href="mailto: ${engineer.getEmail()}></a>></li>
                 <li> Office number: ${engineer.getGithub()}</li>
             </ul>
-        <div>
-    <div> 
+        </div>
+    </div> 
     `;
 }
 
